@@ -4,42 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Mes écrits - Emmanuel Nsoki Were</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header>
-        <h1>Bienvenue sur la page d'Emmanuel Nsoki</h1>
-        <p>Découvrez mes écrits, disponibles en PDF</p>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- En-tête -->
+    <header class="bg-blue-700 text-white text-center p-6">
+        <h1 class="text-3xl font-bold">Bienvenue sur la page d'Emmanuel Nsoki</h1>
+        <p class="mt-2 text-lg">Découvrez mes écrits, disponibles en PDF</p>
     </header>
 
-    <section id="auteur">
-        <h2>À propos de moi</h2>
-        <img src="./IMG-20250723-WA0074.jpg" alt="Photo de l’auteur" width="200">
-        <p>Etudiant à la faculte de Droit de l'université de Kinshasa <br>
-            Je suis passionné par l’écriture. Voici mes œuvres disponibles à la lecture et au téléchargement.</p>
+    <!-- Section auteur -->
+    <section id="auteur" class="max-w-4xl mx-auto p-6">
+        <h2 class="text-2xl font-semibold mb-4">À propos de moi</h2>
+        <img src="./IMG-20250723-WA0074.jpg" alt="Photo de l’auteur" class="w-full max-w-xs mx-auto mb-4 rounded">
+        <p class="text-base leading-relaxed text-center">
+            Étudiant à la faculté de Droit de l'université de Kinshasa<br>
+            Je suis passionné par l’écriture. Voici mes œuvres disponibles à la lecture et au téléchargement.
+        </p>
     </section>
 
-    <section id="ecrits">
-        <h2>Mes écrits</h2>
-        <ul>
+    <!-- Section écrits -->
+    <section id="ecrits" class="max-w-4xl mx-auto p-6">
+        <h2 class="text-2xl font-semibold mb-4">Mes écrits</h2>
+        <ul class="list-disc list-inside space-y-4">
             <li>
-                <strong>Mon premier livre</strong> - <em>La richesse appartient à Dieu</em><br>
-                <a href="../Livres/mes_livres/la-richesse-appartient-a-Dieu.pdf" target="_blank">📄 Voir PDF</a> |
-                <!--<a href="../Mijerca/mes_livres/la-richesse-appartient-a-Dieu.pdf" download>⬇️ Télécharger</a>-->
-            </li>
-            <!--<li>
-                <strong>Deuxième œuvre</strong> - <em>Recueil de poésie</em><br>
-                <a href="poesie.pdf" target="_blank">📄 Voir PDF</a> |
-                <a href="poesie.pdf" download>⬇️ Télécharger</a>-->
+                <strong>Mon premier livre</strong> – <em>La richesse appartient à Dieu</em><br>
+                <a href="../Livres/mes_livres/la-richesse-appartient-a-Dieu.pdf" target="_blank"
+                    class="text-blue-600 hover:underline">📄 Voir PDF</a>
             </li>
         </ul>
     </section>
 
-    <footer>
-        <p>Emmanuel Nsoki</p>
+    <!-- Pied de page -->
+    <footer class="bg-gray-200 text-center p-4 mt-8">
+        <p class="text-sm">Emmanuel Nsoki</p>
     </footer>
 
+    <!-- Script (si tu en as besoin) -->
     <script src="index.js"></script>
 </body>
 
